@@ -55,6 +55,16 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CarrefourEssert\CarrefourEssert.csproj">
+      <Project>{c05dda50-b6b9-4798-a521-a738cc94e2a9}</Project>
+      <Name>CarrefourEssert</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConFour\ConFour.csproj">
+      <Project>{64b987fd-fa99-460a-8b78-788300c5a98d}</Project>
+      <Name>ConFour</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
