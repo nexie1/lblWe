@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarrefourEssert", "CarrefourEssert\CarrefourEssert.csproj", "{C05DDA50-B6B9-4798-A521-A738CC94E2A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUnititaire", "TestUnititaire\TestUnititaire.csproj", "{F716CCCA-7C97-4087-A27B-C2710AE42347}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C05DDA50-B6B9-4798-A521-A738CC94E2A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C05DDA50-B6B9-4798-A521-A738CC94E2A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C05DDA50-B6B9-4798-A521-A738CC94E2A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F716CCCA-7C97-4087-A27B-C2710AE42347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F716CCCA-7C97-4087-A27B-C2710AE42347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F716CCCA-7C97-4087-A27B-C2710AE42347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F716CCCA-7C97-4087-A27B-C2710AE42347}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
