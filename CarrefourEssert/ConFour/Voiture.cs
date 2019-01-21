@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConFour
 {
-    class Voiture
+    public class Voiture
     {
     }
 }

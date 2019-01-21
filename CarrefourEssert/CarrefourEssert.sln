@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarrefourEssert", "Carrefou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUnititaire", "TestUnititaire\TestUnititaire.csproj", "{F716CCCA-7C97-4087-A27B-C2710AE42347}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConFour", "ConFour\ConFour.csproj", "{64B987FD-FA99-460A-8B78-788300C5A98D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F716CCCA-7C97-4087-A27B-C2710AE42347}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F716CCCA-7C97-4087-A27B-C2710AE42347}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F716CCCA-7C97-4087-A27B-C2710AE42347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64B987FD-FA99-460A-8B78-788300C5A98D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64B987FD-FA99-460A-8B78-788300C5A98D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64B987FD-FA99-460A-8B78-788300C5A98D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64B987FD-FA99-460A-8B78-788300C5A98D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

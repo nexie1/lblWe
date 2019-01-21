@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarrefourEssert
 {
-    class Vehicules
+    public class Vehicules
     {
         private int _roues;
         private double _taille;

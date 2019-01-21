@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarrefourEssert
 {
-    class Feu
+    public class Feu
     {
     }
 }
