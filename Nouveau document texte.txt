@@ -1,0 +1,22 @@
+
+Passages Piétons
+Piétons
+
+Voiture
+Bus
+Tram
+Vélo
+Moto
+
+Feu de Signalisation
+	Rouge, Jaune, Vert
+Feu de piétons
+	Rouge, Vert
+Feu tram
+	i, -
+
+Panneau de signalisation
+
+Rails
+Routes
+Voies
