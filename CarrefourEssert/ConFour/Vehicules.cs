@@ -46,9 +46,7 @@ namespace CarrefourEssert
             this.Marque = pMarque;
         }
         #endregion
-
-        public int Roues { get => _roues; set => _roues = value; }
-        public double Taille { get => _taille; set => _taille = value; }
+        
 
 
     }

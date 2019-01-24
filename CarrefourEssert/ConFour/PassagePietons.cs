@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConFour
+namespace CarrefourEssert
 {
-    class PassagePietons
+    public class PassagePietons
     {
     }
 }

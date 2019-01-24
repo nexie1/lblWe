@@ -10,12 +10,15 @@ namespace CarrefourEssert
     {
         private string _type;
         private int _nbVoie;
+        private string _sens;
 
         public string Type { get => _type; set => _type = value; }
         public int NbVoie { get => _nbVoie; set => _nbVoie = value; }
+        public string Sens { get => _sens; set => _sens = value; }
 
-        public Routes(string pType, int pNbVoie, double pPosX, double pPosY) : base(pPosX, pPosY)
+        public Routes(string pSens, string pType, int pNbVoie, double pPosX, double pPosY) : base(pPosX, pPosY)
         {
+            this.Sens = pSens;
             this.Type = pType;
             this.NbVoie = pNbVoie;
         }

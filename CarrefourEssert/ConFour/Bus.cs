@@ -4,9 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConFour
+namespace CarrefourEssert
 {
-    public class Bus
+    public class Bus : Vehicules
     {
+        public Bus(int pNbRoues, double pTaille, bool pAvancer, bool pReculer, string pImmatriculation, string pCouleur, string pMarque, double pPosX, double pPosY) : base(pNbRoues, pTaille, pAvancer, pReculer, pImmatriculation, pCouleur, pMarque, pPosX, pPosY)
+        {
+
+
+        }
     }
 }
