@@ -12,11 +12,21 @@ using System.Threading.Tasks;
 
 namespace CarrefourEssert
 {
+<<<<<<< Updated upstream
+    abstract public class Vehicules
+=======
      public abstract class Vehicules : Map
+>>>>>>> Stashed changes
     {
         #region Attributs
         private int _nbRoues;
         private double _taille;
+<<<<<<< Updated upstream
+
+        public int Roues { get => _roues; set => _roues = value; }
+        public double Taille { get => _taille; set => _taille = value; }
+
+=======
         private bool _avancer;
         private bool _reculer;
         private string _immatriculation;
@@ -46,10 +56,7 @@ namespace CarrefourEssert
             this.Marque = pMarque;
         }
         #endregion
-
-        public int Roues { get => _roues; set => _roues = value; }
-        public double Taille { get => _taille; set => _taille = value; }
-
+>>>>>>> Stashed changes
 
     }
 }

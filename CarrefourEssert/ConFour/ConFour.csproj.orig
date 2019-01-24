@@ -45,8 +45,11 @@
     <Compile Include="Bus.cs" />
     <Compile Include="Feu.cs" />
     <Compile Include="Moto.cs" />
+<<<<<<< Updated upstream
+=======
     <Compile Include="PassagePietons.cs" />
     <Compile Include="Pietons.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Routes.cs" />
