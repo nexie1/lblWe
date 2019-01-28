@@ -46,13 +46,13 @@
     <Compile Include="Feu.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="Moto.cs" />
-    <Compile Include="PassagePietons.cs" />
-    <Compile Include="Pietons.cs" />
+    <Compile Include="PassagePieton.cs" />
+    <Compile Include="Pieton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Routes.cs" />
+    <Compile Include="Route.cs" />
     <Compile Include="Tram.cs" />
-    <Compile Include="Vehicules.cs" />
+    <Compile Include="Vehicule.cs" />
     <Compile Include="Velo.cs" />
     <Compile Include="Voiture.cs" />
   </ItemGroup>
