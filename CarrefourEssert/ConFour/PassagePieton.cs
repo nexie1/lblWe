@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarrefourEssert
 {
-    public class PassagePieton
+    public abstract class PassagePieton
     {
     }
 }

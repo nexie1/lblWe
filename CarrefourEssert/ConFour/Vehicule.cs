@@ -15,6 +15,7 @@ namespace CarrefourEssert
      public abstract class Vehicule : Map
     {
         #region Attributs
+        private string _typeVehicule;
         private int _nbRoues;
         private double _taille;
         private string _immatriculation;
@@ -28,6 +29,7 @@ namespace CarrefourEssert
         public string Immatriculation { get => _immatriculation; set => _immatriculation = value; }
         public string Couleur { get => _couleur; set => _couleur = value; }
         public string Marque { get => _marque; set => _marque = value; }
+        public string TypeVehicule { get => _typeVehicule; set => _typeVehicule = value; }
         #endregion
 
         #region ctor
