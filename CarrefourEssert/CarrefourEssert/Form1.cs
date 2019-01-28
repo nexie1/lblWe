@@ -16,5 +16,10 @@ namespace CarrefourEssert
         {
             InitializeComponent();
         }
+
+        private void bntCreateScene_Click(object sender, EventArgs e)
+        {
+            Feu feu = new Feu("rouge",43,45);
+        }
     }
 }

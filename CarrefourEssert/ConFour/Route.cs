@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarrefourEssert
 {
-    public class Routes : Map
+    public class Route : Map
     {
         private string _type;
         private int _nbVoie;
@@ -16,7 +16,7 @@ namespace CarrefourEssert
         public int NbVoie { get => _nbVoie; set => _nbVoie = value; }
         public string Sens { get => _sens; set => _sens = value; }
 
-        public Routes(string pSens, string pType, int pNbVoie, double pPosX, double pPosY) : base(pPosX, pPosY)
+        public Route(string pSens, string pType, int pNbVoie, double pPosX, double pPosY) : base(pPosX, pPosY)
         {
             this.Sens = pSens;
             this.Type = pType;

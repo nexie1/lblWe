@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace CarrefourEssert
 {
-    static class Program
+    class Program
     {
         /// <summary>
         /// Point d'entrée principal de l'application.

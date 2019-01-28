@@ -6,9 +6,19 @@ using System.Threading.Tasks;
 
 namespace CarrefourEssert
 {
-    public class Tram : Vehicules
+    public class Tram : Vehicule
     {
-        public Tram(int pNbRoues, double pTaille, bool pAvancer, bool pReculer, string pImmatriculation, string pCouleur, string pMarque, double pPosX, double pPosY) : base(pNbRoues, pTaille, pAvancer, pReculer, pImmatriculation, pCouleur, pMarque, pPosX, pPosY)
+        public Tram(int pNbRoues, double pTaille, string pImmatriculation, string pCouleur, string pMarque, double pPosX, double pPosY) : base(pNbRoues, pTaille, pImmatriculation, pCouleur, pMarque, pPosX, pPosY)
+        {
+
+        }
+
+
+        public override void Freiner(Vehicule v)
+        {
+
+        }
+        public override void Avancer(Vehicule v)
         {
 
         }
