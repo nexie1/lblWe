@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Bus.cs" />
     <Compile Include="Feu.cs" />
+    <Compile Include="Usager.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="Moto.cs" />
     <Compile Include="PassagePieton.cs" />

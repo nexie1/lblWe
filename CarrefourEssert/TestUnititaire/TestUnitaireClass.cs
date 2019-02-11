@@ -1,161 +1,177 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using CarrefourEssert;
 
 namespace TestUnititaire
 {
     [TestClass]
     public class TestUnitaireClass
     {
+        double posX = 23.4;
+        double posY = 43.2;
+        Usager u;
+
         /***************************************
-        **************** Routes ****************
+        ***************** Route ****************
         ***************************************/
         [TestMethod]
-        public void TestClassRoutes()
+        public void TestRouteCtor()
         {
             //A remplir
 
-            Route target = new Route();
+            Route target = new Route("Nord", "Voiture", 1, posX, posY);
 
             // Act
-            double map = target.mapExist;
 
             // Assert
-            Assert.AreEqual(1, map); 
-
-            throw new NotImplementedException();
+            Assert.AreEqual("Nord", target.Sens);
+            Assert.AreEqual("Voiture", target.Type);
+            Assert.AreEqual(1, target.NbVoie);
+            Assert.AreEqual(23.4, target.PosX);
+            Assert.AreEqual(43.2, target.PosY);
         }
 
         /***************************************
-        ***************** Feu ******************
+        ************ PassagePieton *************
         ***************************************/
         [TestMethod]
-        public void TestClassFeu()
+        public void TestPassagePietonCtor()
         {
-            //A remplir
-
-            Feu target = new Feu();
+            //A remplir 
+            PassagePieton target = new PassagePieton();
 
             // Act
-            int feu = target.isVert;
 
             // Assert
-            Assert.AreEqual(1, feu);
-
-            throw new NotImplementedException();
+            Assert.AreEqual("Nord", "");
         }
 
         /***************************************
-        *************** Véhicule ***************
+        ************** Véhicules ***************
         ***************************************/
         [TestMethod]
-        public void TestClassVehicule()
+        public void TestBusAvancer()
         {
-            //A remplir
-
-            Vehicule target = new Vehicule();
-
+            //A remplir 
+            Bus target = new Bus(6, 7.5, "GE-BUS", "rouge", "SacDos", posX, posY);
+            u = target;
             // Act
-            string vehicule = target.isVehicule;
+            target.Avancer(u);
 
             // Assert
-            Assert.AreEqual("vehicule", vehicule);
+            Assert.AreNotEqual(43.2, target.PosY);
+        }
+        [TestMethod]
+        public void TestBusFreiner()
+        {
+            //A remplir 
+            Bus target = new Bus(6, 7.5, "GE-BUS", "rouge", "SacDos", posX, posY);
+            u = target;
+            // Act
+            target.Avancer(u);
+            if (target.PosY > 43.2)
+            {
+                target.Freiner(u);
+            }
 
-            throw new NotImplementedException();
+            // Assert
+            Assert.AreEqual(44.2, target.PosY);
         }
 
-        /***************************************
-        ***************** Tram *****************
-        ***************************************/
+
         [TestMethod]
-        public void TestClassTram()
+        public void TestBusCtor()
         {
             //A remplir
 
-            Tram target = new Tram();
+            Bus target = new Bus(6, 7.5, "GE-BUS", "rouge", "SacDos", posX, posY);
 
             // Act
-            string Tram = target.isTram;
 
             // Assert
-            Assert.AreEqual("Tram", Tram);
-
-            throw new NotImplementedException();
+            Assert.AreEqual(6, target.NbRoues);
+            Assert.AreEqual(7.5, target.Taille);
+            Assert.AreEqual("GE-BUS", target.Immatriculation);
+            Assert.AreEqual("rouge", target.Couleur);
+            Assert.AreEqual("SacDos", target.Marque);
+            Assert.AreEqual(23.4, target.PosX);
+            Assert.AreEqual(43.2, target.PosY);
         }
-
-        /***************************************
-        ***************** Moto *****************
-        ***************************************/
+         
         [TestMethod]
-        public void TestClassMoto()
+        public void TestMotoCtor()
         {
             //A remplir
 
-            Moto target = new Moto();
+            Moto target = new Moto(6, 7.5, "GE-ROULE", "orange", "SacDos", posX, posY);
 
             // Act
-            string vehicule = target.isMoto;
 
             // Assert
-            Assert.AreEqual("Moto", Moto);
-
-            throw new NotImplementedException();
+            Assert.AreEqual(6, target.NbRoues);
+            Assert.AreEqual(7.5, target.Taille);
+            Assert.AreEqual("GE-ROULE", target.Immatriculation);
+            Assert.AreEqual("orange", target.Couleur);
+            Assert.AreEqual("SacDos", target.Marque);
+            Assert.AreEqual(23.4, target.PosX);
+            Assert.AreEqual(43.2, target.PosY);
         }
-
-        /***************************************
-        ***************** Velo *****************
-        ***************************************/
+         
         [TestMethod]
-        public void TestClassVelo()
+        public void TestTramCtor()
         {
             //A remplir
 
-            Velo target = new Velo();
+            Tram target = new Tram(6, 7.5, "GE-TRAM", "roouououuge", "SacDos", posX, posY);
 
             // Act
-            string velo = target.isVelo;
 
             // Assert
-            Assert.AreEqual("Velo", Velo);
-
-            throw new NotImplementedException();
-        }
-
-        /***************************************
-        **************** Voiture ***************
-        ***************************************/
-        [TestMethod]
-        public void TestClassVoiture()
-        {
-            //A remplir
-
-            Voiture target = new Voiture();
-
-            // Act
-            string voiture = target.isVoiture;
-
-            // Assert
-            Assert.AreEqual("Voiture", Voiture);
-
-            throw new NotImplementedException();
-        }
-
-        /***************************************
-        ****************** Bus *****************
-        ***************************************/
-        [TestMethod]
-        public void TestClassBus()
-        {
-            //A remplir
-
-            Bus target = new Bus();
-
-            // Act
-            string Bus = target.isBus;
-
-            // Assert
-            Assert.AreEqual("Bus", Bus);
-
-            throw new NotImplementedException();
+            Assert.AreEqual(6, target.NbRoues);
+            Assert.AreEqual(7.5, target.Taille);
+            Assert.AreEqual("GE-TRAM", target.Immatriculation);
+            Assert.AreEqual("roouououuge", target.Couleur);
+            Assert.AreEqual("SacDos", target.Marque);
+            Assert.AreEqual(23.4, target.PosX);
+            Assert.AreEqual(43.2, target.PosY);
         } 
+
+        [TestMethod]
+        public void TestVeloCtor()
+        {
+            //A remplir
+
+            Velo target = new Velo(6, 7.5, "GE-VELO", "BLANCCCCCCCCCCCCCCC", "SacDos", posX, posY);
+
+            // Act
+
+            // Assert
+            Assert.AreEqual(6, target.NbRoues);
+            Assert.AreEqual(7.5, target.Taille);
+            Assert.AreEqual("GE-VELO", target.Immatriculation);
+            Assert.AreEqual("BLANCCCCCCCCCCCCCCC", target.Couleur);
+            Assert.AreEqual("SacDos", target.Marque);
+            Assert.AreEqual(23.4, target.PosX);
+            Assert.AreEqual(43.2, target.PosY);
+        }
+
+        [TestMethod]
+        public void TestVoitureCtor()
+        {
+            //A remplir
+
+            Voiture target = new Voiture(6, 7.5, "GE-POLUE", "violet", "SacDos", posX, posY);
+
+            // Act
+
+            // Assert
+            Assert.AreEqual(6, target.NbRoues);
+            Assert.AreEqual(7.5, target.Taille);
+            Assert.AreEqual("GE-POLUE", target.Immatriculation);
+            Assert.AreEqual("violet", target.Couleur);
+            Assert.AreEqual("SacDos", target.Marque);
+            Assert.AreEqual(23.4, target.PosX);
+            Assert.AreEqual(43.2, target.PosY);
+        }
     }
 }
