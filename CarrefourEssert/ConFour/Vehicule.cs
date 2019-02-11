@@ -9,6 +9,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
+using System.ComponentModel;
+using System.Windows.Forms;
 
 namespace CarrefourEssert
 {
@@ -43,7 +46,7 @@ namespace CarrefourEssert
         }
         #endregion
 
-        public abstract void Avancer(Vehicule V);
-        public abstract void Freiner(Vehicule V);
+        public abstract void Avancer(PictureBox c);
+        public abstract void Freiner(PictureBox c);
     }
 }

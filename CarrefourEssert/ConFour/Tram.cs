@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
+using System.ComponentModel;
+using System.Windows.Forms;
 
 namespace CarrefourEssert
 {
@@ -14,13 +17,15 @@ namespace CarrefourEssert
         }
 
 
-        public override void Freiner(Vehicule v)
+        public override void Freiner(PictureBox v)
         {
 
         }
-        public override void Avancer(Vehicule v)
+        public override void Avancer(PictureBox v)
         {
+            int vitesse = 0;
 
+            vitesse += 1;
         }
     }
 }
